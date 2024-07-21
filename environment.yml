@@ -1,0 +1,6 @@
+name: RailCV
+dependencies:
+  -numpy
+  -pandas
+  -ultralytics
+
