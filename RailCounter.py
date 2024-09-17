@@ -1,9 +1,9 @@
 import cv2
 from ultralytics import YOLO, solutions 
 
-model = YOLO(r"C:\Users\grego\OneDrive\Documents\ComputerVision\RailModelBest.pt")
+model = YOLO(r"/home/gregory/Documents/RailCV/RailModelBest.pt")
 
-cap = cv2.VideoCapture(r"C:\Users\grego\OneDrive\Documents\ComputerVision\train-short.mp4")
+cap = cv2.VideoCapture(r"/home/gregory/Documents/RailCV/train-short.mp4")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
